@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: sans-serif;
+    text-align: center;
+}
+html, body{
+    width:100%;
+    height:100%;
+    background: #111;
+}
+h1{
+    background-color: #333;
+    color:#fff;
+    height:5rem;
+    font-weight: 400;
+    text-align: center;
+    line-height: 5rem;
+}
+.choices{
+    background-color: #111;
+    height:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice{
+    background-color: #ddd;
+    width:7rem;
+    height:7rem;
+    text-align: center;
+    line-height: 7rem;
+    margin:4rem;
+    border-radius: 50%;
+    font-size:0.8em;
+    transition: all ease 0.6s;
+    
+}
+.choice:hover{
+    cursor:pointer;
+    box-shadow: 5px 5px 5px 10px #4beb1a;
+    color:#fff;
+    background-color: #000;
+}
+.score-board{
+    height:20%;
+    background-color: #111;
+    width:100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.5em;
+    line-height: 3rem;
+    color: #4beb1a;
+    font-weight: 600;
+}
+#user-score, #comp-score{
+    color:#fff;
+    font-weight: 400;
+    font-size: 3rem;
+    
+}
+#comp{
+    color: #b50909;
+}
+
+.msg-container{
+    /* background-color: #4beb1a; */
+    height:27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.1em solid #4beb1a;
+}
+#msg{
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 1px 1px 1px 1px #fff;
+}
+
+
+@media (max-width:650px) {
+    h1{
+        font-size:1.6em;
+        overflow:hidden;
+    }
+    .choices{
+       
+       /* background-color: red; */
+       overflow: hidden;
+       justify-content: space-evenly;
+       
+    }
+    .choice{
+        width:4rem;
+        height:4rem;
+        font-size: 0.5em;
+        line-height: 4rem;
+        margin-left:5vw;
+       margin-right: 5vw;
+        
+    }
+    .score-board{
+        height:30%;
+        /* background-color: red; */
+        font-size: 1.6em;
+        
+    }
+    #user-score, #comp-score{
+        font-size: 1.4em;
+    }
+    .msg-container{
+        height:19%;
+
+    }
+    #msg{
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+        font-weight: 500;
+    }
+    
+}
